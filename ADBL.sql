@@ -1,4 +1,12 @@
+/*
+
+cd /cygdrive/c/Users/rcastro/Documents/Navicat/MySQL/Servers/hinantin/HNTMedia
+cp *.sql /cygdrive/c/Users/rcastro/Documents/RCastroq/CloudStorage/DropBox00001/Dropbox/05_Ashaninca/10_Base_de_Datos_Lexica
+
+*/
 CREATE DATABASE ADBL;
+
+USE DATABASE ADBL;
 
 DROP TABLE IF EXISTS `Lexical_Unit`;
 
