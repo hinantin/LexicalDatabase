@@ -34,5 +34,5 @@ CREATE TABLE `Spelling`
 `Gloss_Sp` BIT(1), 
 `Example` BIT(1), 
 `Frequency` BIT(1), 
-PRIMARY KEY (`Id_Lexical_Unit`)
+PRIMARY KEY (`Id_Spelling`)
 );
