@@ -5,7 +5,8 @@ cp *.sql /cygdrive/c/Users/rcastro/Documents/RCastroq/CloudStorage/DropBox00001/
 
 */
 
-DROP DATABASE IF EXISTS `ADBL`
+DROP DATABASE IF EXISTS `ADBL`;
+
 CREATE DATABASE `ADBL`;
 
 USE `ADBL`;
