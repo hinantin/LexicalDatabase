@@ -22,6 +22,8 @@ CREATE TABLE `Lexical_Unit`
 PRIMARY KEY (`Id_Lexical_Unit`)
 );
 
+DROP TABLE IF EXISTS `Spelling`;
+
 CREATE TABLE `Spelling`
 (
 `Id_Spelling` VARCHAR(10) NOT NULL, 
