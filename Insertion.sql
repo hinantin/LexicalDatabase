@@ -8,7 +8,11 @@ cpPhonemeSAMPA VARCHAR(20),
 cpDescripcion VARCHAR(2000), 
 PRIMARY KEY (cpIdPhoneme)
 );
-/*the archiphoneme N is not included in this version*/
+/*
+
+the archiphoneme N is not included in this version
+
+*/
 INSERT INTO TPhoneme(cpIdPhoneme,cpPhonemeIPA,cpPhonemeSAMPA,cpDescripcion) VALUES('PHONE00001','i','','');
 INSERT INTO TPhoneme(cpIdPhoneme,cpPhonemeIPA,cpPhonemeSAMPA,cpDescripcion) VALUES('PHONE00002','e','','');
 INSERT INTO TPhoneme(cpIdPhoneme,cpPhonemeIPA,cpPhonemeSAMPA,cpDescripcion) VALUES('PHONE00003','a','','');
