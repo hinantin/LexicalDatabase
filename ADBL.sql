@@ -57,7 +57,6 @@ CREATE TABLE `Paradigm`
 PRIMARY KEY (`Id_Paradigm`),
 FOREIGN KEY (`Id_Spelling`)
    REFERENCES `Spelling`(`Id_Spelling`)
-   ON DELETE CASCADE
 ) ENGINE=INNODB ;
 
 DROP TABLE IF EXISTS `Dialect`;
