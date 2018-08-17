@@ -52,11 +52,10 @@ DROP TABLE IF EXISTS `Paradigm`;
 CREATE TABLE `Paradigm`
 (
 `Id_Paradigm` INT NOT NULL AUTO_INCREMENT, 
-`Id_Spelling` INT NOT NULL UNIQUE, 
+`Id_Spelling` INT NOT NULL, 
 `Source` VARCHAR(1000) NOT NULL, 
 PRIMARY KEY (`Id_Paradigm`),
-FOREIGN KEY (`Id_Spelling`)
-   REFERENCES `Spelling`(`Id_Spelling`)
+FOREIGN KEY (`Id_Spelling`) REFERENCES `Spelling`(`Id_Spelling`)
 );
 
 DROP TABLE IF EXISTS `Dialect`;
