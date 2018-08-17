@@ -26,7 +26,7 @@ CREATE TABLE `Lexical_Unit`
 `Is_Dictionary_Entry` BIT(1) NOT NULL, 
 `Is_OWLU` BIT(1) NOT NULL, 
 PRIMARY KEY (`Id_Lexical_Unit`)
-) ENGINE=INNODB ;
+);
 
 DROP TABLE IF EXISTS `Spelling`;
 
@@ -45,7 +45,7 @@ CREATE TABLE `Spelling`
 `Example` VARCHAR(5000), 
 `Frequency` INT, 
 PRIMARY KEY (`Id_Spelling`)
-) ENGINE=INNODB ;
+);
 
 DROP TABLE IF EXISTS `Paradigm`;
 
@@ -57,7 +57,7 @@ CREATE TABLE `Paradigm`
 PRIMARY KEY (`Id_Paradigm`),
 FOREIGN KEY (`Id_Spelling`)
    REFERENCES `Spelling`(`Id_Spelling`)
-) ENGINE=INNODB ;
+);
 
 DROP TABLE IF EXISTS `Dialect`;
 
@@ -68,7 +68,7 @@ CREATE TABLE `Dialect`
 `Short_Dialect_Name` VARCHAR(10) NOT NULL, 
 `Source` VARCHAR(1000) NOT NULL, 
 PRIMARY KEY (`Id_Dialect`)
-) ENGINE=INNODB ;
+);
 
 INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`, `Source`) VALUES ('Spanish Loan Words/Préstamos lingüísticos del español', 'ES', 'NONE');
 INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`, `Source`) VALUES ('Ashéninka Perené', 'PRQ', 'NONE');
