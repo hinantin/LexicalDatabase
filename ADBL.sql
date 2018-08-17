@@ -21,7 +21,7 @@ DROP TABLE IF EXISTS `Lexical_Unit`;
 
 CREATE TABLE `Lexical_Unit`
 (
-`Id_Lexical_Unit` VARCHAR(10) NOT NULL, 
+`Id_Lexical_Unit` INT NOT NULL AUTO_INCREMENT, 
 `Is_Loan_Word` BIT(1) NOT NULL, 
 `Is_Dictionary_Entry` BIT(1) NOT NULL, 
 `Is_OWLU` BIT(1) NOT NULL, 
@@ -32,7 +32,7 @@ DROP TABLE IF EXISTS `Spelling`;
 
 CREATE TABLE `Spelling`
 (
-`Id_Spelling` VARCHAR(10) NOT NULL, 
+`Id_Spelling` INT NOT NULL AUTO_INCREMENT, 
 `Word` BIT(1), 
 `Spelling_System` BIT(1), 
 `Source` BIT(1), 
@@ -49,10 +49,10 @@ DROP TABLE IF EXISTS `Dialect`;
 
 CREATE TABLE `Dialect`
 (
-`Id_Dialect` VARCHAR(10) NOT NULL, 
-`Dialect_Name` BIT(1), 
-`Short_Dialect_Name` BIT(1), 
-`Source` BIT(1), 
+`Id_Dialect` INT NOT NULL AUTO_INCREMENT, 
+`Dialect_Name` VARCHAR(100), 
+`Short_Dialect_Name` VARCHAR(10), 
+`Source` VARCHAR(1000), 
 PRIMARY KEY (`Id_Dialect`)
 );
 
