@@ -8,7 +8,6 @@ CREATE USER 'rcastro'@'localhost' IDENTIFIED BY '#rcastro?';
 GRANT ALL ON *.* TO 'rcastro'@'%' IDENTIFIED BY '#rcastro?';
 FLUSH PRIVILEGES;
 
-
 */
 
 DROP DATABASE IF EXISTS `ADBL`;
