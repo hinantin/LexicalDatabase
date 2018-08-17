@@ -36,15 +36,25 @@ CREATE TABLE `Spelling`
 `Word` VARCHAR(1000) NOT NULL, 
 `Spelling_System`  VARCHAR(100) NOT NULL, 
 `Source` VARCHAR(1000) NOT NULL, 
-`Definition` VARCHAR(5000) NOT NULL, 
-`Gloss` VARCHAR(1000) NOT NULL, 
+`Definition_EN` VARCHAR(5000) NOT NULL, 
+`Gloss_EN` VARCHAR(1000) NOT NULL, 
 `Definition_ES` VARCHAR(5000), 
-`Gloss_ES` VARCHAR(5000), 
+`Gloss_ES` VARCHAR(1000), 
 `Definition_PT` VARCHAR(5000), 
-`Gloss_PT` VARCHAR(5000), 
+`Gloss_PT` VARCHAR(1000), 
 `Example` VARCHAR(5000), 
 `Frequency` INT, 
 PRIMARY KEY (`Id_Spelling`)
+);
+
+DROP TABLE IF EXISTS `Paradigm`;
+
+CREATE TABLE `Paradigm`
+(
+`Id_Paradigm` INT NOT NULL AUTO_INCREMENT, 
+`Id_Spelling` INT NOT NULL, 
+`Source` VARCHAR(1000) NOT NULL, 
+PRIMARY KEY (`Id_Dialect`)
 );
 
 DROP TABLE IF EXISTS `Dialect`;
@@ -68,4 +78,5 @@ INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`, `Source`) VA
 INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`, `Source`) VALUES ('Ashéninka Ucayali-Yurúa', 'CPB', 'NONE');
 INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`, `Source`) VALUES ('Inglés/English', 'EN', 'NONE');
 INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`, `Source`) VALUES ('Quechua', 'QU', 'NONE');
+
 
