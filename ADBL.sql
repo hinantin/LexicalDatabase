@@ -59,6 +59,8 @@ CREATE TABLE `Paradigm`
 PRIMARY KEY (`Id_Paradigm`)
 );
 
+INSERT INTO `ADBL`.`Paradigm` (`Id_Paradigm`, `Source`) VALUES ('1', '\\cite[pag. 84]{anderson:cuentos:85}');
+
 DROP TABLE IF EXISTS `Spelling_Paradigm`;
 
 CREATE TABLE `Spelling_Paradigm`
@@ -69,6 +71,9 @@ CREATE TABLE `Spelling_Paradigm`
 FOREIGN KEY (`Id_Paradigm`) REFERENCES `Paradigm`(`Id_Paradigm`),
 FOREIGN KEY (`Id_Spelling`) REFERENCES `Spelling`(`Id_Spelling`)
 );
+
+INSERT INTO `ADBL`.`Spelling_Paradigm` (`Id_Paradigm`, `Id_Spelling`, `Source`) VALUES ('1', '1', '');
+INSERT INTO `ADBL`.`Spelling_Paradigm` (`Id_Paradigm`, `Id_Spelling`, `Source`) VALUES ('1', '2', '');
 
 DROP TABLE IF EXISTS `Dialect`;
 
