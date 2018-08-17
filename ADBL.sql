@@ -54,7 +54,7 @@ CREATE TABLE `Paradigm`
 `Id_Paradigm` INT NOT NULL AUTO_INCREMENT, 
 `Id_Spelling` INT NOT NULL UNIQUE, 
 `Source` VARCHAR(1000) NOT NULL, 
-PRIMARY KEY (`Id_Dialect`),
+PRIMARY KEY (`Id_Paradigm`),
 FOREIGN KEY (`Id_Spelling`)
    REFERENCES `Spelling`(`Id_Spelling`)
    ON DELETE CASCADE
