@@ -56,3 +56,13 @@ CREATE TABLE `Dialect`
 PRIMARY KEY (`Id_Dialect`)
 );
 
+INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('Spanish Loan Words/Préstamos lingüísticos del español', 'es');
+INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('prq', 'Ashéninka Perené');
+INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('cpc', 'Ajyíninka Apurucayali');
+INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('cni', 'Asháninka');
+INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('cjo', 'Ashéninka Pajonal');
+INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('cpu', 'Ashéninka Pichis');
+INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('cpy', 'Ashéninka Sur de Ucayali');
+INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('cpb', 'Ashéninka Ucayali-Yurúa');
+INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('en', 'Inglés/English');
+
