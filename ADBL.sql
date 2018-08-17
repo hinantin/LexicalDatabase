@@ -33,15 +33,17 @@ DROP TABLE IF EXISTS `Spelling`;
 CREATE TABLE `Spelling`
 (
 `Id_Spelling` INT NOT NULL AUTO_INCREMENT, 
-`Word` BIT(1), 
-`Spelling_System` BIT(1), 
-`Source` BIT(1), 
-`Definition` BIT(1), 
-`Gloss` BIT(1), 
-`Definition_Sp` BIT(1), 
-`Gloss_Sp` BIT(1), 
-`Example` BIT(1), 
-`Frequency` BIT(1), 
+`Word` VARCHAR(1000) NOT NULL, 
+`Spelling_System`  VARCHAR(100) NOT NULL, 
+`Source` VARCHAR(1000) NOT NULL, 
+`Definition` VARCHAR(5000) NOT NULL, 
+`Gloss` VARCHAR(1000) NOT NULL, 
+`Definition_ES` VARCHAR(5000), 
+`Gloss_ES` VARCHAR(5000), 
+`Definition_PT` VARCHAR(5000), 
+`Gloss_PT` VARCHAR(5000), 
+`Example` VARCHAR(5000), 
+`Frequency` INT, 
 PRIMARY KEY (`Id_Spelling`)
 );
 
@@ -52,7 +54,7 @@ CREATE TABLE `Dialect`
 `Id_Dialect` INT NOT NULL AUTO_INCREMENT, 
 `Dialect_Name` VARCHAR(100) NOT NULL, 
 `Short_Dialect_Name` VARCHAR(10) NOT NULL, 
-`Source` VARCHAR(1000), 
+`Source` VARCHAR(1000) NOT NULL, 
 PRIMARY KEY (`Id_Dialect`)
 );
 
