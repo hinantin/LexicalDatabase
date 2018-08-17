@@ -47,14 +47,26 @@ CREATE TABLE `Spelling`
 PRIMARY KEY (`Id_Spelling`)
 );
 
+INSERT INTO `Spelling` VALUES (1, 'eeee', '', '', 'sound.of.fear/anguish', '', 'sonido.de.miedo/angustia', NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `Spelling` VALUES (2, 'eee', '', '\\cite[pag. 84]{anderson:cuentos:85}', 'sound.of.fear/anguish', '', 'sonido.de.miedo/angustia', '', '', '', '', NULL);
+
 DROP TABLE IF EXISTS `Paradigm`;
 
 CREATE TABLE `Paradigm`
 (
 `Id_Paradigm` INT NOT NULL AUTO_INCREMENT, 
+`Source` VARCHAR(1000) NOT NULL, 
+PRIMARY KEY (`Id_Paradigm`)
+);
+
+DROP TABLE IF EXISTS `Spelling_Paradigm`;
+
+CREATE TABLE `Spelling_Paradigm`
+(
+`Id_Paradigm` INT NOT NULL, 
 `Id_Spelling` INT UNSIGNED NOT NULL UNIQUE, 
 `Source` VARCHAR(1000) NOT NULL, 
-PRIMARY KEY (`Id_Paradigm`), 
+FOREIGN KEY (`Id_Paradigm`) REFERENCES `Paradigm`(`Id_Paradigm`)
 FOREIGN KEY (`Id_Spelling`) REFERENCES `Spelling`(`Id_Spelling`)
 );
 
