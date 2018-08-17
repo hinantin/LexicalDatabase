@@ -11,7 +11,7 @@ FLUSH PRIVILEGES;
 
 */
 
-DROP DATABASE IF EXISTS `ADBL`;
+DROP DATABASE IF EXISTS `ADBL` CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 CREATE DATABASE `ADBL`;
 
@@ -26,7 +26,7 @@ CREATE TABLE `Lexical_Unit`
 `Is_Dictionary_Entry` BIT(1) NOT NULL, 
 `Is_OWLU` BIT(1) NOT NULL, 
 PRIMARY KEY (`Id_Lexical_Unit`)
-);
+) ENGINE=INNODB ;
 
 DROP TABLE IF EXISTS `Spelling`;
 
@@ -45,17 +45,20 @@ CREATE TABLE `Spelling`
 `Example` VARCHAR(5000), 
 `Frequency` INT, 
 PRIMARY KEY (`Id_Spelling`)
-);
+) ENGINE=INNODB ;
 
 DROP TABLE IF EXISTS `Paradigm`;
 
 CREATE TABLE `Paradigm`
 (
 `Id_Paradigm` INT NOT NULL AUTO_INCREMENT, 
-`Id_Spelling` INT NOT NULL, 
+`Id_Spelling` INT NOT NULL UNIQUE, 
 `Source` VARCHAR(1000) NOT NULL, 
-PRIMARY KEY (`Id_Dialect`)
-);
+PRIMARY KEY (`Id_Dialect`),
+FOREIGN KEY (`Id_Spelling`)
+   REFERENCES `Spelling`(`Id_Spelling`)
+   ON DELETE CASCADE
+) ENGINE=INNODB ;
 
 DROP TABLE IF EXISTS `Dialect`;
 
@@ -66,7 +69,7 @@ CREATE TABLE `Dialect`
 `Short_Dialect_Name` VARCHAR(10) NOT NULL, 
 `Source` VARCHAR(1000) NOT NULL, 
 PRIMARY KEY (`Id_Dialect`)
-);
+) ENGINE=INNODB ;
 
 INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`, `Source`) VALUES ('Spanish Loan Words/Préstamos lingüísticos del español', 'ES', 'NONE');
 INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`, `Source`) VALUES ('Ashéninka Perené', 'PRQ', 'NONE');
