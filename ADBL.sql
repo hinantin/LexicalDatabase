@@ -56,13 +56,14 @@ CREATE TABLE `Dialect`
 PRIMARY KEY (`Id_Dialect`)
 );
 
-INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('Spanish Loan Words/Préstamos lingüísticos del español', 'es');
-INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('prq', 'Ashéninka Perené');
-INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('cpc', 'Ajyíninka Apurucayali');
-INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('cni', 'Asháninka');
-INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('cjo', 'Ashéninka Pajonal');
-INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('cpu', 'Ashéninka Pichis');
-INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('cpy', 'Ashéninka Sur de Ucayali');
-INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('cpb', 'Ashéninka Ucayali-Yurúa');
-INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('en', 'Inglés/English');
+INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('Spanish Loan Words/Préstamos lingüísticos del español', 'ES', 'NONE');
+INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('Ashéninka Perené', 'PRQ', 'NONE');
+INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('Ajyíninka Apurucayali', 'CPC', 'NONE');
+INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('Asháninka', 'CNI', 'NONE');
+INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('Ashéninka Pajonal', 'CJO', 'NONE');
+INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('Ashéninka Pichis', 'CPU', 'NONE');
+INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('Ashéninka Sur de Ucayali', 'CPY', 'NONE');
+INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('Ashéninka Ucayali-Yurúa', 'CPB', 'NONE');
+INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('Inglés/English', 'EN', 'NONE');
+INSERT INTO `ADBL`.`Dialect` (`Dialect_Name`, `Short_Dialect_Name`) VALUES ('Quechua', 'QU', 'NONE');
 
