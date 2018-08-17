@@ -66,7 +66,7 @@ CREATE TABLE `Spelling_Paradigm`
 `Id_Paradigm` INT NOT NULL, 
 `Id_Spelling` INT UNSIGNED NOT NULL UNIQUE, 
 `Source` VARCHAR(1000) NOT NULL, 
-FOREIGN KEY (`Id_Paradigm`) REFERENCES `Paradigm`(`Id_Paradigm`)
+FOREIGN KEY (`Id_Paradigm`) REFERENCES `Paradigm`(`Id_Paradigm`),
 FOREIGN KEY (`Id_Spelling`) REFERENCES `Spelling`(`Id_Spelling`)
 );
 
