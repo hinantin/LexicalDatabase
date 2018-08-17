@@ -32,7 +32,7 @@ DROP TABLE IF EXISTS `Spelling`;
 
 CREATE TABLE `Spelling`
 (
-`Id_Spelling` INT NOT NULL AUTO_INCREMENT, 
+`Id_Spelling` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
 `Word` VARCHAR(1000) NOT NULL, 
 `Spelling_System`  VARCHAR(100) NOT NULL, 
 `Source` VARCHAR(1000) NOT NULL, 
@@ -52,7 +52,7 @@ DROP TABLE IF EXISTS `Paradigm`;
 CREATE TABLE `Paradigm`
 (
 `Id_Paradigm` INT NOT NULL AUTO_INCREMENT, 
-`Id_Spelling` INT NOT NULL, 
+`Id_Spelling` INT UNSIGNED NOT NULL, 
 `Source` VARCHAR(1000) NOT NULL, 
 PRIMARY KEY (`Id_Paradigm`),
 FOREIGN KEY (`Id_Spelling`) REFERENCES `Spelling`(`Id_Spelling`)
