@@ -1,6 +1,6 @@
 /*
 
-For more information write to Richard Castro Mamamni rcastro AT hinant.in 
+For more information write to Richard Alexander Castro Mamani rcastro AT hinant.in 
 
 cd /cygdrive/c/Users/rcastro/Documents/Navicat/MySQL/Servers/hinantin/HNTMedia
 cd /cygdrive/c/Users/rcastro/Documents/Navicat/MySQL/Servers/192.168.43.79/ADBL
