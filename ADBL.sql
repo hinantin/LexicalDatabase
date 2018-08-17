@@ -47,6 +47,7 @@ CREATE TABLE `Spelling`
 PRIMARY KEY (`Id_Spelling`)
 );
 
+/*
 DROP TABLE IF EXISTS `Paradigm`;
 
 CREATE TABLE `Paradigm`
@@ -57,6 +58,7 @@ CREATE TABLE `Paradigm`
 PRIMARY KEY (`Id_Paradigm`),
 FOREIGN KEY (`Id_Spelling`) REFERENCES `Spelling`(`Id_Spelling`)
 );
+*/
 
 DROP TABLE IF EXISTS `Dialect`;
 
