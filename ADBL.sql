@@ -1,7 +1,13 @@
 /*
 
 cd /cygdrive/c/Users/rcastro/Documents/Navicat/MySQL/Servers/hinantin/HNTMedia
+cd /cygdrive/c/Users/rcastro/Documents/Navicat/MySQL/Servers/192.168.43.79/ADBL
 cp *.sql /cygdrive/c/Users/rcastro/Documents/RCastroq/CloudStorage/DropBox00001/Dropbox/05_Ashaninca/10_Base_de_Datos_Lexica
+
+CREATE USER 'rcastro'@'localhost' IDENTIFIED BY '#rcastro?';
+GRANT ALL ON *.* TO 'rcastro'@'%' IDENTIFIED BY '#rcastro?';
+FLUSH PRIVILEGES;
+
 
 */
 
@@ -16,9 +22,9 @@ DROP TABLE IF EXISTS `Lexical_Unit`;
 CREATE TABLE `Lexical_Unit`
 (
 `Id_Lexical_Unit` VARCHAR(10) NOT NULL, 
-`Is_Loan_Word` BIT(1), 
-`Is_Dictionary_Entry` BIT(1), 
-`Is_OWLU` BIT(1), 
+`Is_Loan_Word` BIT(1) NOT NULL, 
+`Is_Dictionary_Entry` BIT(1) NOT NULL, 
+`Is_OWLU` BIT(1) NOT NULL, 
 PRIMARY KEY (`Id_Lexical_Unit`)
 );
 
@@ -38,3 +44,15 @@ CREATE TABLE `Spelling`
 `Frequency` BIT(1), 
 PRIMARY KEY (`Id_Spelling`)
 );
+
+DROP TABLE IF EXISTS `Dialect`;
+
+CREATE TABLE `Dialect`
+(
+`Id_Dialect` VARCHAR(10) NOT NULL, 
+`Dialect_Name` BIT(1), 
+`Short_Dialect_Name` BIT(1), 
+`Source` BIT(1), 
+PRIMARY KEY (`Id_Dialect`)
+);
+
