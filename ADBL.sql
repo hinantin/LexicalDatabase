@@ -52,9 +52,9 @@ DROP TABLE IF EXISTS `Paradigm`;
 CREATE TABLE `Paradigm`
 (
 `Id_Paradigm` INT NOT NULL AUTO_INCREMENT, 
-`Id_Spelling` INT UNSIGNED NOT NULL, 
+`Id_Spelling` INT UNSIGNED NOT NULL UNIQUE, 
 `Source` VARCHAR(1000) NOT NULL, 
-PRIMARY KEY (`Id_Paradigm`),
+PRIMARY KEY (`Id_Paradigm`), 
 FOREIGN KEY (`Id_Spelling`) REFERENCES `Spelling`(`Id_Spelling`)
 );
 
