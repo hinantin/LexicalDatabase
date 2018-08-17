@@ -50,8 +50,8 @@ DROP TABLE IF EXISTS `Dialect`;
 CREATE TABLE `Dialect`
 (
 `Id_Dialect` INT NOT NULL AUTO_INCREMENT, 
-`Dialect_Name` VARCHAR(100), 
-`Short_Dialect_Name` VARCHAR(10), 
+`Dialect_Name` VARCHAR(100) NOT NULL, 
+`Short_Dialect_Name` VARCHAR(10) NOT NULL, 
 `Source` VARCHAR(1000), 
 PRIMARY KEY (`Id_Dialect`)
 );
