@@ -33,16 +33,16 @@ DROP TABLE IF EXISTS `Spelling`;
 CREATE TABLE `Spelling`
 (
 `Id_Spelling` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
-`Word` VARCHAR(1000) NOT NULL, 
+`Word` TEXT NOT NULL, 
 `Spelling_System`  VARCHAR(100) NOT NULL, 
 `Source` VARCHAR(1000) NOT NULL, 
-`Definition_EN` VARCHAR(5000) NOT NULL, 
+`Definition_EN` TEXT NOT NULL, 
 `Gloss_EN` VARCHAR(1000) NOT NULL, 
-`Definition_ES` VARCHAR(5000), 
+`Definition_ES` TEXT, 
 `Gloss_ES` VARCHAR(1000), 
-`Definition_PT` VARCHAR(5000), 
+`Definition_PT` TEXT, 
 `Gloss_PT` VARCHAR(1000), 
-`Example` VARCHAR(5000), 
+`Example` TEXT, 
 `Frequency` INT, 
 PRIMARY KEY (`Id_Spelling`)
 );
