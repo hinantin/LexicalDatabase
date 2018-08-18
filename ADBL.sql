@@ -43,13 +43,14 @@ CREATE TABLE `Spelling`
 `Gloss_ES` TEXT, 
 `Definition_PT` TEXT, 
 `Gloss_PT` TEXT, 
+`Morphological_Values` TEXT, 
 `Example` TEXT, 
 `Frequency` INT, 
 PRIMARY KEY (`Id_Spelling`)
 );
 
-INSERT INTO `Spelling` VALUES (1, 'eeee', '', '', 'sound.of.fear/anguish', '', 'sonido.de.miedo/angustia', NULL, NULL, NULL, NULL, NULL);
-INSERT INTO `Spelling` VALUES (2, 'eee', '', '\\cite[pag. 84]{anderson:cuentos:85}', 'sound.of.fear/anguish', '', 'sonido.de.miedo/angustia', '', '', '', '', NULL);
+INSERT INTO `Spelling` VALUES (1, 'eeee', '', '', 'sound.of.fear/anguish', '', 'sonido.de.miedo/angustia', NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `Spelling` VALUES (2, 'eee', '', '\\cite[pag. 84]{anderson:cuentos:85}', 'sound.of.fear/anguish', '', 'sonido.de.miedo/angustia', '', '', '', '', NULL, NULL);
 
 DROP TABLE IF EXISTS `Paradigm`;
 
