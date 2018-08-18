@@ -49,8 +49,8 @@ CREATE TABLE `Spelling`
 PRIMARY KEY (`Id_Spelling`)
 );
 
-INSERT INTO `Spelling` VALUES (1, 'eeee', '', '', 'sound.of.fear/anguish', '', 'sonido.de.miedo/angustia', NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO `Spelling` VALUES (2, 'eee', '', '\\cite[pag. 84]{anderson:cuentos:85}', 'sound.of.fear/anguish', '', 'sonido.de.miedo/angustia', '', '', '', '', NULL, NULL);
+INSERT INTO `ADBL`.`Spelling` (`Id_Spelling`, `Word`, `Spelling_System`, `Source`, `Definition_EN`, `Gloss_EN`, `Definition_ES`, `Gloss_ES`, `Definition_PT`, `Gloss_PT`, `Morphological_Values`, `Example`, `Frequency`) VALUES ('1', 'eeee', '', '', 'sound.of.fear/anguish', '', 'sonido.de.miedo/angustia', NULL, NULL, NULL, '+whistle.lang.', NULL, NULL);
+INSERT INTO `ADBL`.`Spelling` (`Id_Spelling`, `Word`, `Spelling_System`, `Source`, `Definition_EN`, `Gloss_EN`, `Definition_ES`, `Gloss_ES`, `Definition_PT`, `Gloss_PT`, `Morphological_Values`, `Example`, `Frequency`) VALUES ('2', 'eee', '', '\\cite[pag. 84]{anderson:cuentos:85}', 'sound.of.fear/anguish', '', 'sonido.de.miedo/angustia', '', '', '', '+whistle.lang.', NULL, NULL);
 
 DROP TABLE IF EXISTS `Paradigm`;
 
