@@ -51,6 +51,7 @@ PRIMARY KEY (`Id_Spelling`)
 
 INSERT INTO `ADBL`.`Spelling` (`Id_Spelling`, `Word`, `Spelling_System`, `Source`, `Definition_EN`, `Gloss_EN`, `Definition_ES`, `Gloss_ES`, `Definition_PT`, `Gloss_PT`, `Morphological_Values`, `Example`, `Frequency`) VALUES ('1', 'eeee', '', '', 'sound.of.fear/anguish', '', 'sonido.de.miedo/angustia', NULL, NULL, NULL, '+whistle.lang.', NULL, NULL);
 INSERT INTO `ADBL`.`Spelling` (`Id_Spelling`, `Word`, `Spelling_System`, `Source`, `Definition_EN`, `Gloss_EN`, `Definition_ES`, `Gloss_ES`, `Definition_PT`, `Gloss_PT`, `Morphological_Values`, `Example`, `Frequency`) VALUES ('2', 'eee', '', '\\cite[pag. 84]{anderson:cuentos:85}', 'sound.of.fear/anguish', '', 'sonido.de.miedo/angustia', '', '', '', '+whistle.lang.', NULL, NULL);
+INSERT INTO `ADBL`.`Spelling` (`Id_Spelling`, `Word`, `Spelling_System`, `Source`, `Definition_EN`, `Gloss_EN`, `Definition_ES`, `Gloss_ES`, `Definition_PT`, `Gloss_PT`, `Morphological_Values`, `Example`, `Frequency`) VALUES ('3', 'shikerek', '', '\\cite[pag. 96]{anderson:cuentos:85}', 'animal.cry.made.by.a.bear/maini', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 DROP TABLE IF EXISTS `Paradigm`;
 
