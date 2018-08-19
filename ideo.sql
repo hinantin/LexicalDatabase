@@ -1,3 +1,3 @@
 USE `ADBL`;
 
-SELECT CONCAT('[=',`Word`,'', Morphological_Values, ']') FROM `Spelling`;
+SELECT CONCAT('| \"[=',`Word`,'', IFNULL(`Morphological_Values`,""), '][Ideo][=',`Definition_EN`,']\" : {',`Word`,'}') FROM `Spelling`;
