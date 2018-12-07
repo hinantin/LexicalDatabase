@@ -9,4 +9,5 @@ This is a work in progress.
 ´´´
 $ sudo apt-get update
 $ sudo apt-get install mysql-server
+$ sudo apt-get install mysql-client
 ´´´
