@@ -1,4 +1,4 @@
-# Lexical Database
+# Lexical Database (on maintenance)
 
 Files included
 
