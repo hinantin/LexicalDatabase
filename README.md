@@ -1,4 +1,6 @@
-# Lexical Database (on maintenance)
+# Lexical Database
+
+We are migrating from MySql towards XML.
 
 Files included
 
